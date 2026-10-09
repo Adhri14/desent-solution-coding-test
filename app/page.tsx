@@ -1,41 +1,25 @@
 'use client';
 
-import React, { useState, useMemo } from 'react';
-import {
-  Monitor,
-  MonitorPlay,
-  MonitorSmartphone,
-  LampDesk,
-  Leaf,
-  Armchair,
-  Check,
-  ShoppingBag,
-  X,
-  Coffee,
-  Waves,
-  Bike,
-  Archive,
-  Sofa,
-  BoxSelect,
-  Grid3X3,
-  MonitorUp,
-  Plus
-} from 'lucide-react';
 import KeyboardApple from "@/public/assets/keyboard-apple.png";
 import MeshChairFootrest from "@/public/assets/mesh-chair-with-footrest.png";
 import MeshSladChair from "@/public/assets/mesh-slad-chair.png";
 import Microwave from "@/public/assets/microwave.png";
 import MinimalistDeskAdjustable from "@/public/assets/minimalist-desk-adjustable.png";
 import ModernBlackDeskAdjustable from "@/public/assets/modern-black-desk-adjustable.png";
-import ModernWallnutDeskAdjustable from "@/public/assets/modern-wallnut-desk-adjustable.png";
 import ModernTreadmil from "@/public/assets/modern-treadmil.png";
+import ModernWallnutDeskAdjustable from "@/public/assets/modern-wallnut-desk-adjustable.png";
 import Monitor24Inch from "@/public/assets/monitor-24-inch.png";
 import MonitorUltrawide from "@/public/assets/monitor-ultrawide.png";
 import TrackpadApple from "@/public/assets/trackpad-apple.png";
 import WallnutDeskRolling from "@/public/assets/wallnut-desk-rolling.png";
+import {
+  Check,
+  X
+} from 'lucide-react';
+import { useMemo, useState } from 'react';
 
-import { ProductResponseType, ProductType } from './types/product.type';
 import Image from 'next/image';
+import { ProductResponseType, ProductType } from './types/product.type';
 
 const INVENTORY: ProductResponseType = {
   chairs: [
